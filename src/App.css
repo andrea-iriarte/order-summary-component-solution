@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+  margin: 0;
+  box-sizing: border-box;
+
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+
+  font-family: 'red hat display', sans-serif;
+}
+
+body {
+  background-color: var(--pale-blue);
+}
+
+.app-container img {
+  width: 100vw;
+  height: 50vh;
+  margin: 0;
+}
+.app-container  {
+  
+  margin: 0;
+}
+
+.App {
+  height: 32rem;
+  width: 20rem;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  filter: drop-shadow(0.2rem 0.9rem 0.4rem hsla(245, 75%, 52%, .15));
+}
+
+.cover {
+  height: 33%;
+  width: 100%;
+  background-image: url('./images/illustration-hero.svg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.card {
+  height: 67%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  
+  
+}
+
+.card-header {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.header-title {
+  font-size: 1.25rem;
+  color: var(--dark-blue)
+}
+
+.header-subtext {
+  font-size: .85rem;
+  color: var(--desaturated-blue);
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.order-card {
+  display: flex;
+  height: 2.5rem;
+  width: 75%;
+  background-color: var(--very-pale-blue);
+  border-radius: 10px;
+  margin: auto;
+  margin-top: .5rem;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+}
+
+.music-icon {
+  height: 35px !important;
+  width: 35px !important;
+  
+}
+
+.plan-details {
+  margin-left: 1rem;
+}
+
+.plan-title {
+  font-size: .85rem;
+  color: var(--dark-blue);
+  font-weight: 900;
+  margin-bottom: 0;
+  
+}
+
+.cost {
+  font-size: .85rem;
+  color: var(--desaturated-blue);
+  margin-top: .2rem;
+}
+
+.change {
+  color: var(--bright-blue);
+  font-size: .85rem;
+  font-weight: 700;
+}
+
+.change:hover {
+  color: hsla(245, 75%, 52%, .7);
+  text-decoration: none;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+}
+
+.submit {
+  width: 85%;
+  height: 2rem;
+  margin: auto;
+  border: none;
+  background-color: var(--bright-blue);
+  color: white;
+  border-radius: 10px;
+  margin-top: 0;
+  cursor: pointer;
+  font-size: .85rem;
+  filter: drop-shadow(0 .5rem .7rem hsla(245, 75%, 52%, .4))
+}
+
+.submit:hover {
+  background-image: linear-gradient(hsla(245, 75%, 52%, .7), hsla(278, 75%, 52%, 0.7));
+  filter: drop-shadow(0 .5rem .7rem hsla(245, 75%, 52%, .7));
+}
+
+.cancel {
+  text-align: center;
+  font-size: .8rem;
+  color: var(--desaturated-blue);
+  text-decoration: none;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.cancel:hover {
+  color: var(--dark-blue);
+  
+}
